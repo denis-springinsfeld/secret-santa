@@ -24,7 +24,7 @@ export function ParticipantInput({
 
   return (
     <div className="space-y-4">
-      // Champs de saisie pour ajouter un participant
+      {/* // Champs de saisie pour ajouter un participant */}
       <div className="flex space-x-2">
         <input
           type="text"
@@ -38,7 +38,7 @@ export function ParticipantInput({
           Ajouter
         </button>
       </div>
-      // Liste des participants ajoutés
+      {/* // Liste des participants ajoutés */}
       <ul className="space-y-2">
         {participants.map((name, index) => (
           <li key={index} className="list-item">
