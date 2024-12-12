@@ -30,3 +30,5 @@ Normalement le projet contient les scripts nécessaires pour le build et le dép
 ## Rendu
 
 Créer un dépot git public et envoyer le lien par mail à l'adresse sur community.
+
+...
