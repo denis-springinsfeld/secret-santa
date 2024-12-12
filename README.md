@@ -25,10 +25,14 @@ Lancez le serveur de développement :
 npm run dev
 ```
 
-Normalement le projet contient les scripts nécessaires pour le build et le déploiement sur github page.
+Normalement le projet contient tous les scripts nécessaires pour le build et le déploiement sur github page.
+
+> **Note:** Il vous faudra modifier quelques préférences :
+
+- Dans setting de votre repository, dans la section 'Actions', activez les actions cochez "Read and write" permissions.
+
+- Dans settings de votre repository, activez les github pages et choisissez la branche `gh-pages` comme source.
 
 ## Rendu
 
 Créer un dépot git public et envoyer le lien par mail à l'adresse sur community.
-
-...
