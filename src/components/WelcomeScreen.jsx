@@ -1,3 +1,6 @@
+// Ecran d'accueil de l'application
+// Ce composant prend en props une fonction pour démarrer l'application : onStart
+
 export function WelcomeScreen({ onStart }) {
   return (
     <div className="text-center space-y-6">

@@ -1,22 +1,30 @@
+// Ce composant affiche la liste des participants
+// Il prend en props le tableau de participants : participants
+// Il prend en props une fonction pour ajouter un participant : onAddParticipant
+// Il prend en props une fonction pour supprimer un participant : onRemoveParticipant
+
 import { useState } from "react";
 
 export function ParticipantInput({
-  onAddParticipant,
   participants,
+  onAddParticipant,
   onRemoveParticipant,
 }) {
   const [currentName, setCurrentName] = useState("");
 
   const addParticipant = () => {
+    // On ajoute le participant seulement si le currentName n'est pas vide
     if (currentName !== "") {
+      // Appel de la fonction onAddParticipant avec le nom courant
       onAddParticipant(currentName);
-
+      // Reset du currentName
       setCurrentName("");
     }
   };
 
   return (
     <div className="space-y-4">
+      // Champs de saisie pour ajouter un participant
       <div className="flex space-x-2">
         <input
           type="text"
@@ -30,6 +38,7 @@ export function ParticipantInput({
           Ajouter
         </button>
       </div>
+      // Liste des participants ajoutés
       <ul className="space-y-2">
         {participants.map((name, index) => (
           <li key={index} className="list-item">
