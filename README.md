@@ -1,4 +1,4 @@
-# Secret-Santa
+# Secret-Santa App
 
 On vous propose de réaliser une application web permettant de gérer un tirage au sort pour un **Secret Santa**. La structure de base vous est fournie, avec les fonctionnalités de base :
 
